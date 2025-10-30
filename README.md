@@ -19,6 +19,14 @@ audio -> text + image -> text -> audio により、運転中での会話も可�
 また、例えば5分おきに画像を撮影してモデルに送信することで、ユーザーからのプロンプトがない場合でも、<br>
 自転車からユーザーに話しかけることができます。<br>
 
+## 🧑‍💻 Author
+
+Hayato Hongo
+Developer of the fine-tuned LFM2-VL Japanese model
+
+Special thanks to **Leo Paul** for deploying the model to apps and creating demo videos,
+and to **Rikka Botan** for continuous and stable contributions to the dataset.
+
 
 ## ベースモデル
 
@@ -241,7 +249,3 @@ PY
 
 ---
 
-## 🧑‍💻 作者
-
-**Hongoh Hayato**
-Fine-tuned LFM2-VL 日本語モデル開発者
