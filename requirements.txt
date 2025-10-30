@@ -1,0 +1,36 @@
+# ============================================================
+# LFM2-VL Japanese Fine-tuning Environment
+# CUDA 12.6 / PyTorch 2.8.0 / Transformers 4.55.0 / TRL 0.22.2
+# ============================================================
+
+# === Core Deep Learning Stack will be install===
+#torch==2.8.0+cu126
+#torchvision==0.23.0+cu126
+#torchaudio==2.8.0+cu126
+#--extra-index-url https://download.pytorch.org/whl/cu126
+
+# === Hugging Face Ecosystem ===
+transformers==4.55.0
+datasets==4.0.0
+accelerate==1.10.1
+trl==0.22.2
+peft==0.17.1
+safetensors==0.4.5
+huggingface-hub==0.35.3
+
+# === Vision / Image Handling ===
+pillow==11.3.0
+opencv-python-headless==4.10.0.84 # ARM and x86 compatible
+imageio==2.37.0
+
+# === Utilities ===
+tqdm==4.67.1
+numpy==2.0.2
+pandas==2.2.2
+scipy==1.16.2
+matplotlib==3.10.0
+wandb==0.22.2
+
+# === Optional / Debug / Config ===
+pyyaml==6.0.3
+requests==2.32.4
