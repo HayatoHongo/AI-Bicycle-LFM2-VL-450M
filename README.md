@@ -24,7 +24,7 @@ Dockerベースで、GPU環境（A100など）に最適化されています。
 
 
 ```bash
-git clone https://github.com/HayatoHongo/LFM2-VL-450M-JA-Instruct.git
+git clone https://github.com/HayatoHongo/AI-Bicycle-LFM2-VL-450M
 ```
 
 インストール方法（Ubuntuの場合）
@@ -59,8 +59,8 @@ sudo docker pull hayatohongo/lfm2-vl-ja:cu126-20251008-amd64
 ```bash
 sudo docker run --gpus all -it --rm \
   --ipc=host \
-  -v /home/ubuntu/REPO:/workspace \
-  -v /home/ubuntu/IMAGE_PATH_FILESYSTEM:/workspace/images \
+  -v /home/ubuntu/YOUR_REPO:/workspace \
+  -v /home/ubuntu/YOUR_IMAGE_PATH:/workspace/images \
   --name lfm2-vl-ja-train \
   hayatohongo/lfm2-vl-ja:cu126-20251008-amd64
 ```
@@ -85,8 +85,8 @@ sudo docker build -t lfm2-vl-ja:cu126 .
 ```bash
 sudo docker run --gpus all -it --rm \
   --ipc=host \
-  -v /home/ubuntu/LFM2-VL-450M-JA-Instruct:/workspace \
-  -v /home/ubuntu/llava-virginia/images:/workspace/images \
+  -v /home/ubuntu/AI-Bicycle-LFM2-VL-450M:/workspace \
+  -v /home/ubuntu/YOUR_IMAGE_PATH:/workspace/images \
   --name lfm2-vl-ja-train \
   hayatohongo/lfm2-vl-ja:cu126-20251008-amd64
 ```

@@ -1,0 +1,13 @@
+torchrun --nproc_per_node=8 stage1_en_multiturn/en_train_multiturn_onlast.py \
+  --model_id LiquidAI/LFM2-VL-450M \
+  --chat_json /workspace/stage1_en_multiturn/data/en_multiturn.jsonl \
+  --output_dir /workspace/output \
+  --epochs 1 \
+  --lr 2e-5 \
+  --per_device_train_batch_size 16 \
+  --gradient_accumulation_steps 1 \
+  --bf16 \
+  --tf32 \
+  --report_to wandb \
+  --logging_steps 20 \
+  --seed 42
