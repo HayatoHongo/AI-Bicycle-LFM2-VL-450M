@@ -1,0 +1,16 @@
+torchrun --nproc_per_node=8 script_and_data/Japanese_VQA_CC3M/train_VQA_CC3M_diflr.py \
+  --model_id HayatoHongo/lfm2-vl-ja-finetuned-enmt1ep-jamt10eponall-v2 \
+  --chat_json /workspace/script_and_data/Japanese_VQA_CC3M/data/Japanese_VQA_CC3M_train_188789.jsonl \
+  --image_folder /workspace/images \
+  --output_dir /workspace/output \
+  --run_name lfm2-vl-ja-finetuned-enmt1ep-jamt10eponall-v2-vqa \
+  --epochs 1 \
+  --lr 1e-5 \
+  --text_lr_scale 0.1 \
+  --per_device_train_batch_size 16 \
+  --gradient_accumulation_steps 1 \
+  --bf16 \
+  --tf32 \
+  --report_to wandb \
+  --logging_steps 20 \
+  --seed 42
