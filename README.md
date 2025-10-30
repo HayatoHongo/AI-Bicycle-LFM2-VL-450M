@@ -1,5 +1,7 @@
 # 🇯🇵 AI Bicycle LFM2-VL Japanese Fine-tuning (Docker + A100 + CUDA 12.6)
 
+[Model Card](https://huggingface.co/HayatoHongo/lfm2-vl-ja-finetuned-enmt1ep-jamt10eponall-vqa)
+
 ## デモ動画
 
 ディズニー映画『カーズ』に着想を得て、自転車とおしゃべりできるようなマルチモーダルAIを開発しました。<br>
@@ -23,6 +25,16 @@ audio -> text + image -> text -> audio により、運転中での会話も可�
 日本語データセットを用いて  
 `LiquidAI/LFM2-VL-450M` モデルを微調整（Fine-tuning）して開発しました。
 Dockerベースで、GPU環境（A100）に最適化されています。
+
+
+## 🧭 トレーニングは3段階のパイプラインを経ています
+
+本プロジェクトでは、3つのステージ（Stage 1〜3）を順に実行することでモデルを構築します。
+各ステージの詳細や構成図については、以下のリンクから確認できます。
+
+🔗 **デモ／構成図（Canva）**
+[https://www.canva.com/design/DAG1jHz8MAM/aWNfQN6LETEhQxzBroJswQ/edit?utm_content=DAG1jHz8MAM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton](https://www.canva.com/design/DAG1jHz8MAM/aWNfQN6LETEhQxzBroJswQ/edit?utm_content=DAG1jHz8MAM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 
 ##　⚠️ 注意
 
@@ -68,15 +80,6 @@ git lfs install
 ```
 git lfs pull
 ```
-
-
-## 🧭 トレーニングは3段階のパイプラインを経ています
-
-本プロジェクトでは、3つのステージ（Stage 1〜3）を順に実行することでモデルを構築します。
-各ステージの詳細や構成図については、以下のリンクから確認できます。
-
-🔗 **デモ／構成図（Canva）**
-[https://www.canva.com/design/DAG1jHz8MAM/aWNfQN6LETEhQxzBroJswQ/edit?utm_content=DAG1jHz8MAM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton](https://www.canva.com/design/DAG1jHz8MAM/aWNfQN6LETEhQxzBroJswQ/edit?utm_content=DAG1jHz8MAM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ---
 
