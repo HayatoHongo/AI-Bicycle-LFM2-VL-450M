@@ -29,7 +29,7 @@ Hayato Hongo
 Developer of the fine-tuned LFM2-VL Japanese model
 
 Special thanks to **Leo Paul** for deploying the model to apps and creating demo videos,
-and to **Rikka Botan** for continuous and stable contributions to the dataset.
+and to **Rikka Botan** for continuous and stable contributions to the dataset and deck slides.
 
 
 ## ベースモデル
