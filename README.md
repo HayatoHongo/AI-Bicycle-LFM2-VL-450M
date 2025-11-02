@@ -57,20 +57,7 @@ Dockerベースで、GPU環境（A100）に最適化されています。
 
 ---
 
-## 🧱 環境構成
-
-| コンポーネント | バージョン / 備考 |
-|----------------|------------------|
-| CUDA | 12.6 |
-| Python | 3.11 |
-| PyTorch | 2.8.0+cu126 |
-| Transformers | 4.55.0 |
-| TRL | 0.22.2 |
-| PEFT | 0.17.1 |
-| Accelerate | 1.10.1 |
-| Datasets | 4.0.0 |
-
----
+## startar guide
 
 ```bash
 git clone https://github.com/HayatoHongo/AI-Bicycle-LFM2-VL-450M
@@ -135,7 +122,22 @@ Stage 3（VQAモデル）では、画像データを追加でダウンロード�
 
 ⏱️ **補足**：マルチスレッドを使わない場合、解凍時間が大幅に長くなることがあります。
 
-## 🚀 ビルド & 実行
+## 🧱 環境構成
+
+
+| コンポーネント | バージョン / 備考 |
+|----------------|------------------|
+| CUDA | 12.6 |
+| Python | 3.11 |
+| PyTorch | 2.8.0+cu126 |
+| Transformers | 4.55.0 |
+| TRL | 0.22.2 |
+| PEFT | 0.17.1 |
+| Accelerate | 1.10.1 |
+| Datasets | 4.0.0 |
+
+---
+
 
 ### 1️⃣ Docker イメージ pull or ビルド
 
