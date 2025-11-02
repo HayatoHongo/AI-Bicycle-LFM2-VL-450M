@@ -2,6 +2,9 @@
 
 [Model Card](https://huggingface.co/HayatoHongo/lfm2-vl-ja-finetuned-enmt1ep-jamt10eponall-vqa)
 
+## Demo is available on Colab! 
+[Demo notebook](https://colab.research.google.com/drive/193EhKhY_zUtKiBwoZbXwL9vjWAECBcV4?usp=sharing)
+
 ## デモ動画
 
 ディズニー映画『カーズ』に着想を得て、自転車とおしゃべりできるようなマルチモーダルAIを開発しました。<br>
@@ -18,6 +21,7 @@ audio -> text + image -> text -> audio により、運転中での会話も可�
 
 また、例えば5分おきに画像を撮影してモデルに送信することで、ユーザーからのプロンプトがない場合でも、<br>
 自転車からユーザーに話しかけることができます。<br>
+
 
 ## 🧑‍💻 Author
 
